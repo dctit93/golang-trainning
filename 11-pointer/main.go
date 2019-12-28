@@ -13,7 +13,7 @@ func hello() *int {
 }
 func main() {
 	b := 255        // Giá trị của b là 255 và sẽ đc lưu tại địa chỉ bộ nhớ là 0xc0000a8000
-	fmt.Println(&b) // 0xc0000a8000
+	fmt.Println(&b) // 0xc0000a8000 đây là cách lấy giá trị ô nhớ memory address 
 
 	var a *int = &b // Kiểu a đc khai báo một biến con trò kiểu int nó trỏ tới địa chỉ vùng nhớ của b
 	// a := &b  hoặc khai báo kiểu tự ép kiểu

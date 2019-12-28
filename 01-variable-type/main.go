@@ -53,12 +53,21 @@ func main() {
 	fmt.Println("value", value)
 	// ép kiểu
 	var b = 19
-	fmt.Printf("Kiểu giá trị là %T : %v \n", b, b) //  Trong đó %T là kiểu giá tri , %d là số nguyên , %s kiểu string , %f kiểu float ,%v là giá trị nào cũng đc ^^
+	fmt.Printf("Kiểu giá trị là %T : %v \n", b, b) 
+	/*
+		Trong đó %T trả về kiểu giá trị 
+		%d là số nguyên  
+		%s kiểu string 
+		%f kiểu float 
+		%b kiểu binary
+		%X kiểu hex 
+	*/ 
 	/*
 		+ Cách 2
 			{tên biến } := {giá trị}
 	*/
 	// Cách khai báo ngắn gọn nhất
+	// Lưu ý khi khai báo kiểu này thì biến đó phải được sừ dụng nếu không sẽ báo lỗi
 	c := 20
 	fmt.Printf("Kiểu giá trị là %T : %d \n", c, c)
 	d := "Đỗ Công Tiền"
@@ -66,11 +75,27 @@ func main() {
 	fmt.Println("Tổng của b và c: ", b+c)
 	tong := b + c
 	fmt.Println("tong", tong)
+	e := "Hello"
+	f := `Do you like my hat?`
+	g := 'M'
+	fmt.Printf("%T \n", e)
+	fmt.Printf("%T \n", f)
+	fmt.Printf("%T \n", g)
 	/*
 		Khai báo với const
 	*/
 	const constValue = 55
-	//constValue = 89  giá trị của biến const không thể được gán lại bằng một giá trị khác
-	//const constValue = math.Sqrt(4)  Giá trị của biến const không đước khai báo bằng cách gán giá trị trả về của một function
-
+	/* constValue = 89  giá trị của biến const không thể được gán lại bằng một giá trị khác
+	ta có thế khai báo nhiều giá trị kiểu const như sau
+		const (
+		pi       = 3.14
+		language = "Go"
+	)
+	const constValue = math.Sqrt(4)  Giá trị của biến const không đước khai báo bằng cách gán giá trị trả về của một function
+	Ta có thể khai báo nhìu biến cùng lúc như sau
+	var a, b, c int = 1, 2, 3
+	var a, b, c = 1, 2, 3
+	var a, b, c = 1, false, 3
+	a, b, c := 1, false, 3
+	*/
 }

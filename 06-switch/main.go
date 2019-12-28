@@ -26,7 +26,7 @@ func main() {
 		Check case đúng sai
 	*/
 	num := 75
-	switch {
+	switch { // no expression
 	case num >= 0 && num <= 50: // Check true false ở đây
 		fmt.Println("Từ 0 đến 50")
 	case num >= 51 && num <= 100:

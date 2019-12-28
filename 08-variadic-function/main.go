@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 )
-
+// Tiendc
 /*
 	Function có thể nhập vào biến đầu vào có số lượng không cố định
 

@@ -9,7 +9,6 @@ type HocSinh struct {
 	hoTen, ngaySinh, diaChi string
 	tuoi                    int
 }
-
 func main() {
 	// Tạo một học sinh
 	hocSinh1 := HocSinh{
@@ -59,4 +58,5 @@ func main() {
 
 	fmt.Println("Tên của Học sinh 5 sau khi thay đổi", hocSinh5.hoTen) //JackMa
 
+	
 }

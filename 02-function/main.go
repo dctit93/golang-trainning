@@ -25,7 +25,7 @@ func HinhChuNhat(dai, rong int) (int, int) {
 func HinhChuNhatNameReturn(dai, rong int) (chuVi int, dienTich int) {
 	chuVi = (dai + rong) * 2
 	dienTich = dai * rong
-	return chuVi, dienTich
+	return 
 }
 
 func main() {

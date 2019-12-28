@@ -17,4 +17,36 @@ func main() {
 	} else {
 		fmt.Println("number is greater than 100")
 	}
+
+	b := false
+
+	if food := "Chocolate"; b {
+		fmt.Println(food)
+	}
+	// true false
+	if true {
+		fmt.Println("This ran")
+	}
+
+	if false {
+		fmt.Println("This did not run")
+	}
+	// not
+	if !true {
+		fmt.Println("This did not run")
+	}
+
+	if !false {
+		fmt.Println("This ran")
+	}
+	// or 
+	if true || false {
+		fmt.Println("This ran")
+	}
+	// and
+	
+	if true && false {
+		fmt.Println("This did not run")
+	}
+	
 }
